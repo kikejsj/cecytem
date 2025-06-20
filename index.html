@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> CECYTEM</title>
+  <style>
+ 
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+     
+    }
+
+    
+    #splash {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeOut 1s ease-out 3s forwards;
+    }
+
+    
+    #splash img {
+      width: 200px; 
+      animation: zoomIn 1.5s ease-out;
+    }
+
+    @keyframes zoomIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    
+    nav {
+      background-color: #5e2129;
+      padding: 10px;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    
+    .contenido {
+      padding: 20px;
+max-height: calc(100vh - 100px);
+overflow: auto;
+
+
+
+    }
+
+    
+    .submenu {
+     
+      display: none;
+      margin-top: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ffffff;
+    }
+
+    .submenu.active {
+      display: block;
+      
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div id="splash">
+    <img src="LOGOCECYTEM.jpg" alt="Logo CECYTEM">
+  </div>
+
+ <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .encabezado {
+      display: flex;
+      align-items: center;
+      background-color: #f5f0f0;
+      padding: 10px 20px;
+      border-bottom: 4px solid #9c2b2e;
+    }
+
+    .encabezado img {
+      height: 150px;
+      margin-right: 100px;
+    }
+
+    .titulo {
+      font-size: 24px;
+      color: #7a3b3b;
+      font-weight: bold;
+    }
+  
+  </style>
+ 
+ <div class="encabezado">
+    <img src="cecysanfe.jpg" height="50" width="100">
+    
+    <div class="titulo"><h2>Colegio de Estudios Científicos y Tecnológicos del Estado de México</h2></div>
+  </div>
+
+
+
+ 
+
+  <CEnter><h2 style="font-family: 'Times New Roman', Times, serif; font-size: 10xp; color: #d1bf56;">PLANTEL SAN FELIPE DEL PROGRESO  </h2></CEnter>
+  
+ 
+  
+  <div class="contenido" id="contenido" style="scroll-behavior: auto;">
+    <nav>
+  <ul>
+    <li><a href="#" id="inicio-link" style="color: #d1bf56;">Inicio</a></li>
+    <li><a href="#" id="acerca-link" style="color: #d1bf56;">Acerca del CECYTEM</a></li>
+    <li><a href="#" id="historia-link" style="color: #d1bf56;">Historia</a></li>
+    <li><a href="#" id="directorio-link" style="color: #d1bf56;">Directorio</a></li>
+    <li><a href="#" id="oferta-link" style="color: #d1bf56;">Oferta Educativa</a></li>
+    <li><a href="#" id="servicios-link" style="color: #d1bf56;">Servicios</a></li>
+    <li><a href="#" id="ubicacion-link" style="color: #d1bf56;">Ubicación</a></li>
+    <li><a href="#" id="video-link" style="color: #d1bf56;">Video Directorio</a></li>
+    <li><a href="#" id="noticias-link" style="color: #d1bf56;">Noticias</a></li>
+    <li><a href="#" id="contacto-link" style="color: #d1bf56;">Contacto</a></li>
+  </ul>
+</nav>
+
+<style>
+nav {
+  background-color: #5e2129;
+  padding: 10px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px;
+  padding: 0; /* Elimina el padding por defecto */
+  margin: 0; /* Elimina el margin por defecto */
+}
+
+nav ul li {
+  cursor: pointer;
+}
+</style>
+   
+    <div id="inicio" class="seccion">
+      
+      <p>
+        <CEnter><h3 style="font-family: 'Times New Roman', Times, serif; font-size: 10xp; color: #5e2129;">Gracias por entrar al Colegio de Estudios Cientificos y Tecnologicos del Estado de Mexico <br>  </h3></CEnter>
+        <CEnter><h4 style="font-family: 'Times New Roman', Times, serif; font-size: 10xp; color: #d1bf56;">“La educación no cambia al mundo, cambia a las personas que van a cambiar al mundo”. <br>
+        <br>Paulo Freire </h4></CEnter>
+      </p>
+
+
+
+      
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .carousel-container {
+      max-width: 800px;
+      position: relative;
+      margin: 50px auto;
+      overflow: hidden;
+    }
+    .carousel-slide {
+      display: none;
+      width: 100%;
+    }
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+    }
+
+   
+    .prev, .next {
+      position: absolute;
+      top: 50%; 
+      transform: translateY(-50%);
+      padding: 16px;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      user-select: none;
+      z-index: 10;
+    }
+
+    .prev {
+      left: 0; 
+      border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body >
+
+<div class="carousel-container">
+  <div class="carousel-slide">
+    <img src="img1.JPG" alt="Imagen 1">
+  </div>
+  <div class="carousel-slide">
+    <img src="img2.JPG" alt="Imagen 2">
+  </div>
+  <div class="carousel-slide">
+    <img src="img3.JPG" alt="Imagen 3">
+  </div>
+
+
+  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<script>
+  let slideIndex = 0;
+  let autoSlideInterval;
+
+  const slides = document.getElementsByClassName("carousel-slide");
+
+  function showSlide(index) {
+    if (index >= slides.length) { slideIndex = 0; }
+    if (index < 0) { slideIndex = slides.length - 1; }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+  }
+
+  function changeSlide(n) {
+    clearTimeout(autoSlideInterval); 
+    slideIndex += n;
+    showSlide(slideIndex);
+    autoSlide();
+  }
+
+  function autoSlide() {
+    autoSlideInterval = setTimeout(() => {
+      slideIndex++;
+      showSlide(slideIndex);
+      autoSlide();
+    }, 3000);
+  }
+
+
+  showSlide(slideIndex);
+  autoSlide();
+</script>
+</div>
+
+
+
+
+
+
+
+
+    <div id="acerca" class="seccion">
+      <h2>Acerca del CECYTEM</h2>
+      <div>
+        <h3>Objetivo</h3>
+        <p>Nuestro CECyTEM Plantel San Felipe del Progreso se compromete a formar jóvenes competentes y conscientes de su identidad cultural, preparados para enfrentar los retos del futuro y contribuir al desarrollo de su comunidad y del país.</p>
+      </div>
+      <div>
+        <h3>Misión</h3>
+        <p>Formar jóvenes profesionistas en el área de la tecnología, específicamente en la carrera de Técnico en Programación, a través de una educación integral y de calidad que promueva el desarrollo de competencias científicas y tecnológicas. Fomentar la identidad cultural de la región mazahua, integrando un enfoque intercultural en el proceso educativo. Comprometernos con la mejora continua y la vinculación con la comunidad, las instituciones educativas y el sector productivo, para contribuir al desarrollo social y económico de San Felipe del Progreso y del Estado de México.</p>
+      </div>
+      <div>
+        <h3>Visión</h3>
+        <p>Ser una institución educativa de excelencia reconocida a nivel regional y nacional, que forme profesionales competentes y comprometidos con su comunidad, capaces de enfrentar los desafíos del mundo contemporáneo. Promover un ambiente de aprendizaje inclusivo e intercultural que valore y respete la diversidad, impulsando la innovación y el uso de tecnologías avanzadas. Contribuir al desarrollo sostenible de la región mazahua y del Estado de México, formando líderes que fomenten el progreso social y económico a través de la educación y el emprendimiento.</p>
+      
+      <img src="vision.JPG" alt="cecytem" width="700" height="600">
+      
+      
+      </div>
+    </div>
+
+    <div id="historia" class="seccion">
+   
+      <h2>Historia</h2>
+      <p>Data en septiembre del año 2004 cuando se obtiene el registro ante la Secretaria de Educación Pública, iniciando actividades el  primero de octubre del mismo año; con dos aulas prestadas por la Primaria “Niños Héroes”, ubicada en la comunidad de “La Cabecera” del municipio San Felipe del Progreso, el primer ciclo escolar 2004-2005, se conformó de 44 alumnos, distribuidos en dos grupos  inscritos en la carrera de Técnico en Informática, dirigida por el Lic. José Ángel Robles Hernández.
+
+En noviembre del año 2005, asume la dirección del plantel el Maestro en Administración Eduardo Vargas Romero, que en paz descansé; contando con una matrícula de 335 alumnos y aún en las instalaciones provisionales de las bodegas de CONASUPO, se comenzó con las gestiones para adquirir el terreno donde se construirían las instalaciones del plantel, fortaleciendo la parte académica incorporando a más personal docente y administrativo que apoyaban en las labores del plantel.
+Para el ciclo escolar 2007-2008 se inicia con una matrícula de 390 alumnos y con mucho orgullo egresa la primera generación del plantel (Generación 2004-2007), conformada de 28 alumnos, 13 de ellos obteniendo el Título de Técnicos en Informática. 
+Durante este mismo año, se obtiene la donación del terreno que actualmente conforma nuestras instalaciones, dando inicio a su construcción a finales del 2007.
+En el mes de abril de 2008 asume la dirección del plantel la Maestra Elizabeth Guadarrama Almanza, quien gestiona la luz eléctrica para el edificio “D” y el pronto cambio a las instalaciones propias del plantel, adecuando el área administrativa; cubriendo una matrícula de 333 alumnos y debido a su incremento de matrícula se apertura el turno vespertino, así mismo, cabe hacer mención que durante esta administración se gestionó la 2da etapa de la construcción del edifico “C” del plantel y gracias a su compromiso y  profesionalización, el plantel adquirió la categoría de aspirante para ingresar al Sistema Nacional de Bachillerato (SNB), aunado a ello, como parte del proceso enseñanza aprendizaje 
+se consolidan las bases para ser el plantel pionero en el desarrollo del enfoque intercultural enfatizando con gran orgullo nuestra cultura mazahua que caracteriza la región noroeste del Estado de México.
+En septiembre del año 2012, el Lic. Florentino Mendoza Baltazar, subdirector del plantel, funge como encargado del despacho de la Dirección del Plantel hasta el mes de mayo de 2013, periodo en el que se consolidan los requisitos para la integración del Plantel al Sistema Nacional de Bachillerato con Nivel IV; la matrícula estudiantil aumenta a 380 alumnos e inicia la construcción del Edificio “C”, periodo en el que se formaliza la actualización de carrera de Técnico en Informática a Técnico en Programación.
+En el mes de mayo de 2013, se integra a esta institución, como Director del plantel el Mtro. Margarito García San Juan, periodo en el que se concluye la construcción del Edificio “C”, equipando las salas de cómputo e idiomas; no obstante, para el año 2017 gestionó subir el nivel de la categoría del Sistema Nacional de Bachillerato del IV  a Nivel III; al año siguiente aumenta considerablemente la matrícula a 464 alumnos, siendo una de las instituciones con mayor matrícula escolar dentro del municipio, pasando de tener 11 grupos a un total de 14; se logró obtener equipos de proyección y pizarras electrónicas de ultima tecnología en siete aulas, adecuación para la construcción de la cafetería, acuerdos con las bases de taxis para el servicio de traslado seguro de la comunidad escolar; techado de pasillos y colocación del arco techo en la cancha de usos múltiples del plantel, así mismo se dio gran realce a talleres culturales y académicos, contribución a la comunidad con la reforestación y cuidado de medio ambiente; cursos de capacitación a padres de familia, fortaleció la interculturalidad con la implementación de clases de lengua Mazahua, comenzó con la integración de alumnos al programa de modelo Dual, iniciando con 3 alumnos incorporados en la Universidad Intercultural del Estado de México y 9 Incorporados en el Tecnológico de Estudios Superiores de San Felipe del Progreso; incrementó del acervo bibliográfico del plantel, gestionó diez nuevas plazas administrativas y consolidó e incrementó la planta docente, gestionó la construcción de una bodega para el resguardo de herramientas del personal de mantenimiento y se gestionó el servicio de enfermería para atención de los alumnos.
+En el mes de agosto del año 2021, toma el liderazgo del plantel el Maestro en Administración y Desarrollo de Negocios, Carlos Javier Contreras Dordelly, quien recibe una matrícula escolar de 434 alumnos del ciclo escolar 2020-2021, dando hincapié en incrementar la matrícula escolar a través de la promoción y difusión del plantel actualmente se ha alcanzado un matricula total de 492 alumnos inscritos en la carrera de Técnico en programación; gestiona el convenio de colaboración de servicio social y prevención del delito con el Ayuntamiento de San Felipe del Progreso; resalta la importancia del programa de formación dual, fortaleciendo el vínculo entre la Universidad Intercultural del Estado de México y el Tecnológico de Estudios Superiores de San Felipe del Progreso incorporando un total de 25 alumnos; cabe hacer mención que en lo que va de esta administración el Tecnológico de Estudios Superiores de San Felipe del Progreso dentro del programa dual ha certificado a 37 alumnos en el Módulo 1 de CISCO “Introducción a las redes” y en “Internet de las Cosas”; se fortalece el perfil 
+de egreso de los alumnos y las habilidades del personal docente, certificando en el estándar de competencia laboral EC0160 “Desarrollo de código de software” alcanzando el 100% de la matricula actual de quinto semestre certificados y 3 docentes que alcanzaron su certificación en el año 2023; con la colaboración del Patronato Pro Zona Mazahua vigoriza el enfoque intercultural a través de diferentes eventos, clases y participaciones de los estudiantes, promoviendo la cultura Mazahua; resultado de ello 34 alumnos fueron evaluados por la Universidad Intercultural del Estado de México en la lengua Originaria Mazahua; 
+Comprometidos con la formación y desarrollo de los alumnos, se da mayor énfasis en los niveles de logro académico posicionando al plantel dentro de los 11 primeros lugares de los 60 planteles que conforman el Colegio; se consolida la plantilla docente y administrativa a: 22 docentes, 20 administrativos y 4 directivos; a través del desarrollo de proyectos de emprendimiento y del trabajo colaborativo entre el personal docente y directivo, se obtiene el primer lugar con el desarrollo del proyecto “Control y monitoreo de la seguridad del plantel a través de un dron” y el tercer lugar con el proyecto “Botón de pánico en dispositivos móviles, en el Concurso Estatal de Proyectos de Emprendimiento realizado por el consejo Mexiquense de ciencia y Tecnología COMECyT; realiza acuerdos y gestiones con el municipio y padres de familia para la construcción de las gradas de la cancha de usos múltiples; se realiza la remodelación de la cafetería así como la colocación del techumbre del acceso principal al plantel; la pavimentación de acceso principal del plantel así como el acceso a internet con conectividad de fibra óptica; se equipa con 12 microscopios nuevos el laboratorio polifuncional, se fortalece el sentido de pertinencia a través de actividades culturales, artísticas y deportivas, resultado de ello, dos alumnos representan con gran orgullo al plantel y al Estado de México en el Encuentro Deportivo de los CECyTE´s a Nivel Nacional en San Cristóbal de las Casas, Chiapas en la modalidad de atletismo, así mismo, un alumno concursa en el Festival Académico Nacional realizado en el estado de Chihuahua en la modalidad de Inglés. 
+Para finalizar, quiero resaltar, con jactancia que en este XX Aniversario, estamos orgullosos de ser parte de la formación de 17 generaciones de jóvenes, inicialmente como Técnicos en Informática y actualmente como Técnicos en Programación, en la modalidad de bachillerato tecnológico bivalente para que desarrollen sus capacidades científicas y tecnológicas, basados en principios y valores como lo indica la misión y la visión del Colegio, y que continuaremos formando jóvenes profesionistas por el bien de nuestra comunidad, nuestro municipio y nuestra Nación; faltan muchas cosas por hacer, pero reiteramos nuestro compromiso como institución educativa que la juventud Sanfelipense está en buenas manos, manos del personal docente, administrativo y directivo que día tras días da su mayor esfuerzo para formar a cada uno de nuestros estudiantes. ¡Festejemos con alegría y entusiasmo estos 20 años! Enhorabuena ¡muchas felicidades!
+Somos CECYTEM, Orgullosamente CECyTEM San Felipe del Progreso.
+<br>
+<img src="cecyhitoria.JPG" alt="cecytem" width="660" height="750">
+
+
+
+</p>
+    </div>
+
+    <div id="directorio" class="seccion">
+      <h2>
+
+      </h2>
+      <p>
+        <iframe src="ORGANIGRAMA_2025 ok.pdf" frameborder="0" height="550" width="1550"></iframe>
+      </p>
+    </div>
+
+    <div id="oferta" class="seccion">
+      <h2>Oferta Educativa</h2>
+      <div>
+        <h3>Técnico en Programación</h3>
+        <p>Formar profesionales competentes en el área de la programación, capaces de diseñar, desarrollar y mantener sistemas de software que respondan a las necesidades del entorno laboral y social. El programa busca desarrollar habilidades técnicas, analíticas y creativas en los estudiantes, fomentando su capacidad para resolver problemas y trabajar en equipo.</p>
+      </div>
+      <div>
+        <h3>Perfil de Egreso</h3>
+        <p>    El egresado sera capaz de: instalar y desarrollar software de aplicacion utilizando programacion estructurada y orientada a objetos en ambientes web y moviles, con almacenamiento persistente en los datos, desarrollo de aplicaciones android y IOS</p>
+      </div>
+      <div>
+        <h3>Ámbito Laboral</h3>
+        <p>
+1.-Edicion de software y edicion de software integrada con la reproduccion. <br>
+2.-Servicios de diseño de sistemas de computo y servicios relacionados <br>
+3.-Escuelas de computacion del sector publico y provado. <br>
+4.-Servicios de busqueda en la red. <br>
+        </p>
+      </div>
+      <div>
+        <h3>Certificaciones</h3>
+        <ul>
+          <li>EC0160 Desarrollo de Código de Software</li>
+          <li>Certificacion del idioma ingles TOEFL</li>
+          <li>Certificación en Microsoft Office</li>
+        </ul>
+        <img src="banda.JPG" alt="cecytem" width="700" height="600">
+
+
+      </div>
+    </div>
+
+    <div id="servicios" class="seccion">
+      <h2>Servicios</h2>
+      <ul>
+        <center>
+<table border="3">
+<tr>
+  <td><h1>Biblioteca</h1><a href="bibioteca.jpeg" ><img src="bibioteca.jpeg" alt="biblioteca" height="300" width="330"></a></td>
+</tr>
+<tr>
+  <td><h1>Becas</h1><a href="beca.webp" ><img src="beca.webp" alt="biblioteca" height="300" width="330"></a></td>
+</tr>
+<tr>
+  <td><h1>Otientacion Edeucativa</h1><a href="orientacioedu.jpeg" ><img src="orientacioedu.jpeg" alt="biblioteca" height="300" width="330"></a></td>
+</tr>
+<tr>
+  <td><h1>actividades culturales</h1><a href="activiadescultu.jpeg" ><img src="activiadescultu.jpeg" alt="biblioteca" height="300" width="330"></a></td>
+</tr>
+<tr>
+  <td><h1>Cafeteria </h1><a href="tiendita.jpeg" ><img src="tiendita.jpeg" alt="biblioteca" height="300" width="330"></a></td>
+</tr>
+<tr>
+  <td><h1>Servicios de taxis </h1><a href="taxis.png" ><img src="taxis.png" alt="biblioteca" height="300" width="330"></a></td>
+</tr>
+</center>
+
+</table>
+
+      </ul>
+    </div>
+
+    <div id="ubicacion" class="seccion">
+      <h2>Ubicación</h2>
+      <p>
+<address>
+  
+
+
+
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .map-container {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        iframe {
+            display: block;
+            width: 100%;
+            height: 450px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ubicación del CECyTEM San Felipe del Progreso, Estado de México</h1>
+
+    <p>Aquí puedes encontrar la ubicación de nuestro plantel en Google Maps:</p>
+<div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.620061450382!2d-99.95796402495522!3d19.728793481614822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2f45056d3495d%3A0x85bdf9d952c937db!2sCECYTEM%20San%20Felipe%20del%20Progreso!5e0!3m2!1ses-419!2smx!4v1750433315780!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+
+
+</div>
+    
+
+
+
+
+</address>
+
+
+      </p>
+    </div>
+
+    <div id="video" class="seccion">
+      <h2>Somos CECYTEM San Felipe del Progreso </h2>
+      <p>
+     
+    
+    <div class="tiktok-container">
+        <video controls autoplay loop muted playsinline height="500" width="560">
+            <source src="cecypromooo.mp4" type="video/mp4" >
+            Tu navegador no soporta el tag de video.
+        </video>
+    </div>
+
+
+
+
+
+        
+      </p>
+    </div>
+
+    <div id="noticias" class="seccion">
+      <h2>Noticias</h2>
+      <p>
+<h3>En cecytem san felipe del progreso nos sumamos con 
+mucho entusiasmo a las 
+acrividades de la #JornadaporlapazYContraLasadicciones</h3> <br>
+<center><img src="adicc.jpeg" alt="adicciones" width="1000" height="500"></center><br>
+<h3>Desde el colegio de estuios cientificos y tecnologicos 
+del estado de mexico nos unimos
+ para felicitar al secretario de educacion, Mtro. Miguel
+  Angel Hernandez Espejel, en su cumpleaños.</h3> <br>
+<center><img src="cumple.jpeg" alt="adicciones" width="1000" height="500"></center><br>
+<h3>Como parte de los productos de aprendizaje de la UAC Conciencia Historica
+ a cargo del Mtro. Juan Daniel Flores J.  
+ se realiza la representación a traves de maquetas sobre la identidad 
+ cultural de San Felipe del progreso y como la cultura mazahua ha trascendido a lo 
+ largo de la historia.</h3> <br>
+<center><img src="primo.jpeg" alt="adicciones" width="1000" height="500"></center><br>
+
+
+
+
+
+
+
+
+
+      </p>
+    </div>
+
+    <div id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <p>
+
+
+
+
+
+
+
+
+
+Teléfono: (712) 123 77 13 <br>
+e-mail: plantel.sanfelipedelp@cecytem.mx <br>
+Datos: <br>
+Alumnos: 504 <br>
+Personal docente: 20 <br>
+Personal administrativo: 20 <br>
+Edificios: 3 <br>
+Aulas: 11 <br>
+Laboratorios: 2 <br>
+Áreas administrativas: Adaptada <br>
+Talleres y salas de cómputo: 2 <br>
+Áreas deportivas: 2 <br>
+Equipo con que se cuenta: 163 <br>
+Bibliotecas: adaptada (2795 volúmenes) <br>
+Cafeterías: provisional</p>
+    </div>
+  </div>
+
+  
+  <script>
+   
+    function mostrarSeccion(seccionId) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.style.display = 'none'; 
+      });
+      document.getElementById(seccionId).style.display = 'block'; 
+    }
+
+    
+    mostrarSeccion('inicio');
+
+   
+    document.getElementById('inicio-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('inicio');
+    });
+
+    document.getElementById('acerca-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('acerca');
+    });
+
+    document.getElementById('historia-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('historia');
+    });
+
+    document.getElementById('directorio-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('directorio');
+    });
+
+    document.getElementById('oferta-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('oferta');
+    });
+
+    document.getElementById('servicios-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('servicios');
+    });
+
+    document.getElementById('ubicacion-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('ubicacion');
+    });
+
+    document.getElementById('video-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('video');
+    });
+
+    document.getElementById('noticias-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('noticias');
+    });
+
+    document.getElementById('contacto-link').addEventListener('click', function(event) {
+      event.preventDefault();
+      mostrarSeccion('contacto');
+    });
+
+    
+    setTimeout(() => {
+      document.body.classList.add('mostrar-contenido');
+    }, 3500);
+  </script>
+
+</body>
+</html>
